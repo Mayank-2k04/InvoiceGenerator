@@ -24,7 +24,7 @@ pip install pandas fpdf
 3. Run the script:
    
    ```bash
-   python script.py
+   python main.py
    ```
 
 4. Generated PDF invoices will be saved in the current directory.
