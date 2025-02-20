@@ -46,7 +46,3 @@ Each invoice PDF includes:
 
 ## Author
 Made by: **Mayank Kapoor**
-
-## License
-This project is licensed under the MIT License.
-
