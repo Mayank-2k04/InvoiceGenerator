@@ -55,6 +55,6 @@ for i in files:
     pdf.set_text_color(80, 80, 80)
     pdf.ln(h=5)
     pdf.cell(w=0,h=8,txt=f"Total due amount is {total}",ln=1)
-    pdf.write(h=8,txt="Made By : Mayank Kapoor")
-
+    pdf.cell(w=30,h=8,txt="Made By : Mayank Kapoor",ln=1)
+    pdf.image("myphoto.jpeg",h=20,x=20)
     pdf.output(f"{i_no}.pdf")
