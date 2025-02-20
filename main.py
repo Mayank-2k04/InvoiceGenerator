@@ -40,8 +40,16 @@ for i in files:
         pdf.cell(w=40,h=8,txt=str(row['amount_purchased']),border=1)
         pdf.cell(w=40,h=8,txt=str(row['price_per_unit']),border=1)
         pdf.cell(w=30,h=8,txt=str(price),border=1,ln=1)
-
         total += price
+
+    pdf.cell(w=30, h=8, txt="", border=1)
+    pdf.cell(w=50, h=8, txt="", border=1)
+    pdf.cell(w=40, h=8, txt="", border=1)
+    pdf.cell(w=40, h=8, txt="", border=1)
+    pdf.cell(w=30, h=8, txt=str(total), border=1, ln=1)
+
+
+
 
     pdf.set_font('Times', "B", 13)
     pdf.set_text_color(80, 80, 80)
