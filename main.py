@@ -13,11 +13,14 @@ for i in files:
 
     pdf.add_page()
     pdf.cell(w=0, h=8,align='',txt=f"Invoice Number : {i_no}",ln=1)
+    pdf.set_font('Times', style='B', size=15)
     pdf.cell(w=0, h=8,txt=f"Date : {date}",ln=1)
+    pdf.ln(2)
 
     f = pd.read_excel(i, sheet_name="Sheet 1")
 
     c_name = list(f.columns)
+    c_name = [x.replace("_"," ").title() for x in c_name]
     pdf.set_font('Times', style='B', size=13)
     pdf.cell(w=30, h=8, txt=c_name[0], border=1)
     pdf.cell(w=50, h=8, txt=c_name[1], border=1)
